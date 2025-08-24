@@ -1,11 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mobile Banking</title>
-</head>
-<body>
-    
-</body>
+
+    <!-- daisyUI cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- tailwind cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-[#f4f5f7]">
+    <section
+      class="max-w-[400px] mx-auto flex flex-col justify-center items-center h-[100vh]"
+    >
+      <div
+        class="h-[130px] w-[300px] bg-[url(./assets/bg.png)] bg-cover flex justify-center items-center"
+      >
+        <img src="./assets/Group.png" alt="" />
+      </div>
+      <form class="p-10 bg-[#FFFFFF] rounded-2xl w-full">
+        <fieldset class="space-y-4 w-full">
+          <label class="font-semibold" for="name">Mobile Number</label> <br />
+          <input
+            id="mobile-number"
+            class="mt-2 rounded-xl pl-5 w-full bg-[#f4f5f7] border-none py-2"
+            type="text"
+            placeholder="Enter Your Number"
+            class="input"
+          />
+          <br />
+          <label class="font-semibold" for="email">4 Digit Pin</label><br />
+          <input
+            id="cash-out-pin-number"
+            class="mt-2 rounded-xl pl-5 w-full bg-[#f4f5f7] border-none py-2"
+            type="text"
+            placeholder="Enter 4 Digit Pin"
+            class="input"
+          />
+        </fieldset>
+
+        <fieldset>
+          <button
+            id="btn-login"
+            class="btn bg-[#0874F2] text-white font-semibold w-full mt-3 rounded-xl"
+          >
+            Login
+          </button>
+        </fieldset>
+      </form>
+    </section>
+
+    <!-- js file -->
+    <script src="./script.js"></script>
+  </body>
 </html>
