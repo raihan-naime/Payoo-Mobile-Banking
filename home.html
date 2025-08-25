@@ -30,7 +30,9 @@
       <div class="flex items-center">
         <img class="h-[50px]" src="./assets/Group.png" alt="" />
         <div>
-          <h2 class="font-bold text-xl text-[#212121]">$ <span id="available-balance">45000</span></h2>
+          <h2 class="font-bold text-xl text-[#212121]">
+            $ <span id="available-balance">45000</span>
+          </h2>
           <p class="text-[#8b8b8b]">Available Balance</p>
         </div>
       </div>
@@ -47,7 +49,7 @@
       </div>
     </nav>
 
-    <!-- welcome to payoo section -->
+    <!-- welcome to payoo section ❗❗❗ -->
     <section class="max-w-lg mx-auto p-6 bg-[#fff]">
       <div class="text-left">
         <h1 class="text-[##080808] font-semibold text-2xl">
@@ -62,8 +64,9 @@
       <!-- card container -->
       <div class="grid grid-cols-3 gap-4 mt-6">
         <!-- card 1 -->
-        <div id="add-money-section-btn"
-          class="flex justify-center items-center h-[100px] border border-[#e9e9e9] rounded-xl py-5 px-4"
+        <div
+          id="add-money-section-btn"
+          class="form-btn flex justify-center items-center h-[100px] border border-[#e9e9e9] rounded-xl py-5 px-4"
         >
           <div>
             <img class="mx-auto" src="./assets/wallet1.png" alt="" />
@@ -72,8 +75,9 @@
         </div>
 
         <!-- card 2 -->
-        <div id="cash-out-section-btn"
-          class="flex justify-center items-center h-[100px] border border-[#e9e9e9] rounded-xl py-5 px-4"
+        <div
+          id="cash-out-section-btn"
+          class="form-btn flex justify-center items-center h-[100px] border border-[#e9e9e9] rounded-xl py-5 px-4"
         >
           <div>
             <img class="mx-auto" src="./assets/send1.png" alt="" />
@@ -83,7 +87,8 @@
 
         <!-- card 3 -->
         <div
-          class="flex justify-center items-center h-[100px] border border-[#e9e9e9] rounded-xl py-5 px-4"
+          id="transfer-money-section-btn"
+          class="form-btn flex justify-center items-center h-[100px] border border-[#e9e9e9] rounded-xl py-5 px-4"
         >
           <div>
             <img class="mx-auto" src="./assets/money1.png" alt="" />
@@ -93,7 +98,8 @@
 
         <!-- card 4 -->
         <div
-          class="flex justify-center items-center h-[100px] border border-[#e9e9e9] rounded-xl py-5 px-4"
+          id="get-bonus-section-btn"
+          class="form-btn flex justify-center items-center h-[100px] border border-[#e9e9e9] rounded-xl py-5 px-4"
         >
           <div>
             <img class="mx-auto" src="./assets/bonus1.png" alt="" />
@@ -103,7 +109,8 @@
 
         <!-- card 5 -->
         <div
-          class="flex justify-center items-center h-[100px] border border-[#e9e9e9] rounded-xl py-5 px-4"
+          id="pay-bill-section-btn"
+          class="form-btn flex justify-center items-center h-[100px] border border-[#e9e9e9] rounded-xl py-5 px-4"
         >
           <div>
             <img class="mx-auto" src="./assets/purse1.png" alt="" />
@@ -113,7 +120,8 @@
 
         <!-- card 6 -->
         <div
-          class="flex justify-center items-center h-[100px] border border-[#e9e9e9] rounded-xl py-5 px-4"
+          id="transaction-section-btn"
+          class="form-btn flex justify-center items-center h-[100px] border border-[#e9e9e9] rounded-xl py-5 px-4"
         >
           <div>
             <img class="mx-auto" src="./assets/transaction1.png" alt="" />
@@ -123,8 +131,11 @@
       </div>
     </section>
 
-    <!-- add money section -->
-    <section id="add-money-section" class="hidden max-w-lg mx-auto p-6 bg-[#f4f5f7]">
+    <!-- add money section ❗❗❗ -->
+    <section
+      id="add-money-section"
+      class="features-btns hidden max-w-lg mx-auto p-6 bg-[#f4f5f7]"
+    >
       <h3 class="pb-4 font-semibold text-xl text-[#202020]">Add Money</h3>
       <form class="bg-white p-4 rounded-3xl space-y-4">
         <h4 class="font-medium text-[#525252]">Select A Bank</h4>
@@ -140,7 +151,8 @@
         <!-- Bank Account Number -->
         <div>
           <h4 class="font-medium text-[#525252]">Bank Account Number</h4>
-          <input id="bank-account-number"
+          <input
+            id="bank-account-number"
             class="mt-2 rounded-xl pl-5 w-full bg-[#f4f5f7] border-none py-2"
             type="text"
             placeholder="Enter 11 digit account number"
@@ -151,7 +163,8 @@
         <!-- Amount to Add -->
         <div>
           <h4 class="font-medium text-[#525252]">Amount to Add</h4>
-          <input id="add-amount"
+          <input
+            id="add-amount"
             class="mt-2 rounded-xl pl-5 w-full bg-[#f4f5f7] border-none py-2"
             type="text"
             placeholder="Add Amount to withdraw"
@@ -162,7 +175,8 @@
         <!-- Pin Number -->
         <div>
           <h4 class="font-medium text-[#525252]">Pin Number</h4>
-          <input id="bank-pin-number"
+          <input
+            id="bank-pin-number"
             class="mt-2 rounded-xl pl-5 w-full bg-[#f4f5f7] border-none py-2"
             type="text"
             placeholder="Enter 4 digit pin number"
@@ -170,20 +184,21 @@
           />
         </div>
         <button
-            id="add-money-btn"
-            class="btn bg-[#0874F2] text-[18px] text-white font-bold w-full mt-3 rounded-xl"
-          >
-            Add Money
-          </button>
+          id="add-money-btn"
+          class="btn bg-[#0874F2] text-[18px] text-white font-bold w-full mt-3 rounded-xl"
+        >
+          Add Money
+        </button>
       </form>
     </section>
 
-
-    <!-- cash Out section -->
-    <section id="cash-out-section" class=" max-w-lg mx-auto p-6 bg-[#f4f5f7]">
+    <!-- cash Out section ❗❗❗ -->
+    <section
+      id="cash-out-section"
+      class="features-btns hidden max-w-lg mx-auto p-6 bg-[#f4f5f7]"
+    >
       <h3 class="pb-4 font-semibold text-xl text-[#202020]">Cash Out</h3>
       <form class="bg-white p-4 rounded-3xl space-y-4">
-
         <!-- Agent Number -->
         <div>
           <h4 class="font-medium text-[#525252]">Agent Number</h4>
@@ -198,7 +213,8 @@
         <!-- Amount  -->
         <div>
           <h4 class="font-medium text-[#525252]">Amount</h4>
-          <input id="cash-out-amount"
+          <input
+            id="cash-out-amount"
             class="mt-2 rounded-xl pl-5 w-full bg-[#f4f5f7] border-none py-2"
             type="text"
             placeholder="Add Amount to withdraw"
@@ -209,7 +225,8 @@
         <!-- Pin Number -->
         <div>
           <h4 class="font-medium text-[#525252]">Pin Number</h4>
-          <input id="cash-out-pin-number"
+          <input
+            id="cash-out-pin-number"
             class="mt-2 rounded-xl pl-5 w-full bg-[#f4f5f7] border-none py-2"
             type="text"
             placeholder="Enter 4 digit pin number"
@@ -217,12 +234,51 @@
           />
         </div>
         <button
-            id="withdraw-btn"
-            class="btn bg-[#0874F2] text-[18px] text-white font-bold w-full mt-3 rounded-xl"
-          >
-            Withdraw Money
-          </button>
+          id="withdraw-btn"
+          class="btn bg-[#0874F2] text-[18px] text-white font-bold w-full mt-3 rounded-xl"
+        >
+          Withdraw Money
+        </button>
       </form>
+    </section>
+
+    <!-- transfer money section ❗❗❗ -->
+    <section
+      id="transfer-money-section"
+      class="features-btns hidden max-w-lg mx-auto p-6 bg-[#f4f5f7]"
+    >
+      <h3 class="pb-4 font-semibold text-xl text-[#202020]">Transfer Money</h3>
+    </section>
+
+    <!-- Get Bonus section ❗❗❗ -->
+    <section
+      id="get-bonus-section"
+      class="features-btns hidden max-w-lg mx-auto p-6 bg-[#f4f5f7]"
+    >
+      <h3 class="pb-4 font-semibold text-xl text-[#202020]">Get Bonus</h3>
+    </section>
+
+    <!-- Pay Bill
+ section ❗❗❗ -->
+    <section
+      id="pay-bill-section"
+      class="features-btns hidden max-w-lg mx-auto p-6 bg-[#f4f5f7]"
+    >
+      <h3 class="pb-4 font-semibold text-xl text-[#202020]">Pay Bill</h3>
+    </section>
+
+    <!-- Transactions section ❗❗❗ -->
+    <section
+      id="transaction-section"
+      class="features-btns hidden max-w-lg mx-auto p-6 bg-[#f4f5f7]"
+    >
+      <div class="flex justify-between items-center">
+        <h3 class="pb-4 font-semibold text-xl text-[#202020]">Transactions</h3>
+        <p class="text-sm text-[#6084a4]">View All</p>
+      </div>
+      <div id="transaction-container">
+        
+      </div>
     </section>
 
     <script src="./home.js"></script>
