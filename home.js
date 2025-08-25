@@ -52,6 +52,10 @@ document
     // bank number and pin
     const bankAccountNumber = getInputValueNumber("bank-account-number");
     const bankPinNumber = getInputValueNumber("bank-pin-number");
+    if(addAmount <= 0){
+      alert('tui gorib');
+      return;
+    }
     if (
       bankAccountNumber === addMoneyBankAccount &&
       bankPinNumber === pinNumber
@@ -75,7 +79,10 @@ document.getElementById("withdraw-btn").addEventListener("click", function (e) {
   const cashOutAmount = getInputValueNumber("cash-out-amount");
   const availableBalance = getInnerText("available-balance");
   const cashOutPinNumber = getInputValueNumber("cash-out-pin-number");
-
+  if(cashOutAmount <= 0 || cashOutAmount > availableBalance){
+    alert('kire tui ki koris ?');
+    return;
+  }
   if (pinNumber == cashOutPinNumber) {
     const currentBalance = availableBalance - cashOutAmount;
 
